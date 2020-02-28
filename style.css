@@ -1,0 +1,142 @@
+*{
+    font-family: 'Yeon Sung', cursive;
+    font-size:100%;
+ }
+html {
+    scroll-behavior: smooth;
+    
+  }
+
+.card {
+    border: none;
+}
+.divider {
+    border: solid red 3px;
+    width: 10%;
+}
+
+.padding {
+    padding: 0 1.7rem 0 0.75rem;
+}
+
+.border {
+    border-radius: 15px;
+    border: red solid 1px ;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+nav img {
+    border-radius: 100%;
+    margin-left: 40%;
+    width: 200px;
+    height: 200px;
+}
+nav h2 {
+    color: black;
+}
+
+p {
+    font-family: 'Yeon Sung', cursive;
+    font-size:100%;
+}
+h2 {
+    font-family: 'Lakki Reddy', cursive;
+    size: 150%;
+}
+.ali{
+    height: 500px;
+    background-color: blueviolet;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 20vh;
+    background-color:blue;
+    border-radius: 15px;
+  }
+  .title h1{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .logo img{
+    border-radius: 50%;
+  }
+  .navi{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+  }
+  
+  .navi a:hover{
+    background-color:blue;
+    color: white;
+  }
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+ .footer-distributed h3 span{
+	color:  lightseagreen;
+} 
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+
+
