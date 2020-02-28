@@ -23,17 +23,18 @@ html {
     border-radius: 15px;
     border: red solid 1px ;
 }
-nav {
+#nav {
     display: flex;
     flex-direction: column;
+    background-color: rgb(165, 149, 149);
 }
-nav img {
+#nav img {
     border-radius: 100%;
     margin-left: 40%;
     width: 200px;
     height: 200px;
 }
-nav h2 {
+#nav h2 {
     color: black;
 }
 
@@ -47,7 +48,7 @@ h2 {
 }
 .ali{
     height: 500px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 nav{
     display: flex;
@@ -95,15 +96,9 @@ nav{
 	display: inline-block;
 	vertical-align: top;
 }
-
-/* Footer left */
-
 .footer-distributed .footer-left{
 	width: 40%;
 }
-
-/* The company logo */
-
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Open Sans', cursive;
@@ -112,9 +107,7 @@ nav{
 
  .footer-distributed h3 span{
 	color:  lightseagreen;
-} 
-
-/* Footer links */
+}
 
 .footer-distributed .footer-links{
 	color:  #ffffff;
@@ -138,5 +131,12 @@ nav{
 }
 
 
-
+/* .deliver{
+  display: none;
+}
+.delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+} */
 

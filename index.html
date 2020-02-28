@@ -18,7 +18,7 @@
             <a href="index.html"><img src="images/icon3.jpeg" alt="image of l'unico logo"></a>
             </div>
            <div class="title">
-              <h1>Slykvs Pizza</h1>
+              <h1>Delightful pizza</h1>
             </div>
             <ul class="navi">
               <li>
@@ -39,12 +39,12 @@
             </nav>
         </div>
     <div class="container">
-    <nav class="navbar navbar-light bg-light" class="row col-md-12" >
+    <div id="nav" class="navbar navbar-light style="background-color: #e3f2fd;" class="row col-md-12" >
         <a class="navbar-brand" href="#">
             <img src="images/pizza-logo.jpg" width="150" height="150"  alt="little pizza">
-            <h2 class="text-center">Delicious, delightful pizza</h2>
+            <h2 class="text-center"> Delightful pizza</h2>
         </a>
-    </nav>
+    </div>
         <p class="welcome">Hello, pizza lover! Here is your place to make your order-a-pizza, the way you like it, dream come true. You are free to try any of our different tantalizing tastes. 
             Your dreams come true on a silver platter, Lol :-) <br> <strong>Welcome!</strong>  
         </p>
@@ -87,11 +87,121 @@
                 </div>
             </div>
     
-        </section>
-        <section class="ali">
+        </section>     
+                            <form id="orders">
+                                        <div class="modal-body">
+                                            <div id="hide-now">
+                                                <p>Choose Pizza: <span class="pizza-size"></span></p>
+                                                <select id="pname">
+                                                    <option selected >Select</option>
+                                                    <option>Steak</option>
+                                                    <option>Beef Pizza</option>
+                                                    <option>Cheese Pizza</option>
+                                                </select>
+                                                <hr>
+                                                <p>Pizza size chosen: <span class="pizza-size"></span></p>
+                                                <select id="psize">
+                                                    <option selected>Select</option>
+                                                    <option>Small</option>
+                                                    <option>Medium</option>
+                                                    <option>Large</option>
+                                                    <option>Mega</option>
+                                                    
+                                                </select>
+                                                <hr>
+                                                <p>Choose type of crust:</p>
+                                                <select id="pcrust">
+                                                    <option selected >Select</option>
+                                                    <option>Crispy: Ksh. 120</option>
+                                                    <option>Stuffed: Ksh. 150</option>
+                                                    <option>Gluten-free: Ksh. 200</option>
+                                                    <option>Crunchy-thin: Ksh. 250</option>
+                                                    <option>Neopolitan/Thick: Ksh. 300</option>
+                                                </select>
+    
+                                                <hr>
 
+                                                <p>Choose toppings:</p>
+                                                <select id="pcrust">
+                                                    <option selected >Select</option>
+                                                    <option> Pepperoni</option>
+                                                    <option>Chicken</option>
+                                                    <option>Onions</option>
+                                                    <option>Cruph</option>
+                                                </select>
+    
+                                                <hr>
 
-
+    
+                                                <p>Is your order for pickup or delivery?</p>
+    
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="pickup-option"
+                                                        name="pickup-delivery" checked>
+                                                    <label class="form-check-label" for="pickup-option">Pickup</label>
+                                                </div>
+    
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="delivery-option"
+                                                        name="pickup-delivery">
+                                                    <label class="form-check-label" for="delivery-option">Delivery</label>
+                                                </div>
+    
+                                                    <hr>
+                                                    <div id="pickup">
+                                                    <h5>Pickup Details:</h5>
+                                                    <div class="form-group">
+                                                        <label for="your-name">Your Name</label>
+                                                        <input type="text" class="form-control" id="your-name" required>
+                                                    </div>
+                                                </div>
+    
+                                                <div id="delivery">
+                                                    <hr>
+                                                    <h5>Add your delivery details:</h5>
+                                                    <div class="form-group">
+                                                        <label for="your-name">Your Name</label>
+                                                        <input type="text" class="form-control" id="your-name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="delivery-date">Delivery Date</label>
+                                                        <input type="date" class="form-control" id="delivery-date" required>
+                                                    </div>
+                                                    <div id="address">
+                                                        <div class="address">
+                                                            <div class="form-group">
+                                                                <label for="house">House No.</label>
+                                                                <input type="text" class="form-control" id="house" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="road">Street</label>
+                                                                <input type="text" class="form-control" id="road" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="city">City</label>
+                                                                <input type="text" class="form-control" id="city" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" id="more">Order
+                                                More
+                                            </button>
+                                            <button type="button" class="btn btn-danger" id="checkout">Checkout</button>
+                                            <button type="button" class="btn btn-danger" id="place-order">Place
+                                                Order</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
         </section>
         <footer class="footer-distributed">
 
