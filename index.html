@@ -7,9 +7,10 @@
     <script src="https://kit.fontawesome.com/85493ca592.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/script.js"></script>
 
     
-    <title >Pizza Delight </title>
+    <title >Pizza Delight &copy;</title>
 </head>
 <body>
     <div class="container">
@@ -87,121 +88,77 @@
                 </div>
             </div>
     
-        </section>     
-                            <form id="orders">
-                                        <div class="modal-body">
-                                            <div id="hide-now">
-                                                <p>Choose Pizza: <span class="pizza-size"></span></p>
-                                                <select id="pname">
-                                                    <option selected >Select</option>
-                                                    <option>Steak</option>
-                                                    <option>Beef Pizza</option>
-                                                    <option>Cheese Pizza</option>
-                                                </select>
-                                                <hr>
-                                                <p>Pizza size chosen: <span class="pizza-size"></span></p>
-                                                <select id="psize">
-                                                    <option selected>Select</option>
-                                                    <option>Small</option>
-                                                    <option>Medium</option>
-                                                    <option>Large</option>
-                                                    <option>Mega</option>
-                                                    
-                                                </select>
-                                                <hr>
-                                                <p>Choose type of crust:</p>
-                                                <select id="pcrust">
-                                                    <option selected >Select</option>
-                                                    <option>Crispy: Ksh. 120</option>
-                                                    <option>Stuffed: Ksh. 150</option>
-                                                    <option>Gluten-free: Ksh. 200</option>
-                                                    <option>Crunchy-thin: Ksh. 250</option>
-                                                    <option>Neopolitan/Thick: Ksh. 300</option>
-                                                </select>
-    
-                                                <hr>
-
-                                                <p>Choose toppings:</p>
-                                                <select id="pcrust">
-                                                    <option selected >Select</option>
-                                                    <option> Pepperoni</option>
-                                                    <option>Chicken</option>
-                                                    <option>Onions</option>
-                                                    <option>Cruph</option>
-                                                </select>
-    
-                                                <hr>
-
-    
-                                                <p>Is your order for pickup or delivery?</p>
-    
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-check-input" id="pickup-option"
-                                                        name="pickup-delivery" checked>
-                                                    <label class="form-check-label" for="pickup-option">Pickup</label>
-                                                </div>
-    
-                                                <div class="form-check">
-                                                    <input type="radio" class="form-check-input" id="delivery-option"
-                                                        name="pickup-delivery">
-                                                    <label class="form-check-label" for="delivery-option">Delivery</label>
-                                                </div>
-    
-                                                    <hr>
-                                                    <div id="pickup">
-                                                    <h5>Pickup Details:</h5>
-                                                    <div class="form-group">
-                                                        <label for="your-name">Your Name</label>
-                                                        <input type="text" class="form-control" id="your-name" required>
-                                                    </div>
-                                                </div>
-    
-                                                <div id="delivery">
-                                                    <hr>
-                                                    <h5>Add your delivery details:</h5>
-                                                    <div class="form-group">
-                                                        <label for="your-name">Your Name</label>
-                                                        <input type="text" class="form-control" id="your-name">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="delivery-date">Delivery Date</label>
-                                                        <input type="date" class="form-control" id="delivery-date" required>
-                                                    </div>
-                                                    <div id="address">
-                                                        <div class="address">
-                                                            <div class="form-group">
-                                                                <label for="house">House No.</label>
-                                                                <input type="text" class="form-control" id="house" required>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="road">Street</label>
-                                                                <input type="text" class="form-control" id="road" required>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="city">City</label>
-                                                                <input type="text" class="form-control" id="city" required>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" id="more">Order
-                                                More
-                                            </button>
-                                            <button type="button" class="btn btn-danger" id="checkout">Checkout</button>
-                                            <button type="button" class="btn btn-danger" id="place-order">Place
-                                                Order</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
+        </section>
+        <div class="row">
+            <div class="col-md-4 mx-auto py-2">
+              <form id="myForm">
+                <div class="form-group">
+                  <label for="sel1">Pizza type:</label>
+                  <br> <select class="form-control" id="type">
+                    <option>Maranira</option>
+                    <option>Margherita</option>
+                    <option>Pizza Calzone</option>
+                    <option>Vegerina</option>
+                    <option>Grilled-caprese</option>
+                    <option>Fontana</option>
+                    <option>Funghi</option>
+                    <option>Mimosa</option>
+                  </select>
                 </div>
+                <div class="form-group">
+                  <label for="sel1">Select crust:</label>
+                  <select class="form-control" id="crust">
+                    <option>Cripsy</option>
+                    <option>Stuffed</option>
+                    <option>Gluten-free</option>
+                    <option>Flatbread Crust</option>
+                    <option>Focaccia</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sel1">Select topping:</label>
+                  <select class="form-control" id="top">
+                    <option>Pepperoni</option>
+                    <option>Green peppers</option>
+                    <option>onions</option>
+                    <option>Sausage</option>
+                    <option>Extra cheese</option>
+                    <option>Mushrooms</option>
+                    <option>Bacon</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sel1">Select size:</label>
+                  <select class="form-control" id="size">
+                    <option value="1">Large-@-1200</option>
+                    <option value="2">Medium-@-900</option>
+                    <option value="3">Small-@-650</option>
+                  </select>
+                </div>
+                <div class="form-group" required>
+                  <label for="sel1">Quantity:</label>
+              
+                  <input type="number" id="qty" class="form-control" min="1" required>
+                  
+                </div>
+                <div class="form-group" required="">
+                  <label for="sel1">Delivery option:</label>
+                  <select class="form-control" id="pick">
+                    <option value="1">Self pick up</option>
+                    <option value="2">Delivered</option>
+
+                  </select>
+                </div>
+                <div class="form-group">
+
+                  <button type="submit" class="btn btn-danger btn-block">checkout</button>
+
+                </div>
+              </form>
             </div>
+
+          </div>
+        </div>     
         </section>
         <footer class="footer-distributed">
 
