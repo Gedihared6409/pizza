@@ -10,7 +10,7 @@
     <script src="js/script.js"></script>
 
     
-    <title >Pizza Delight &copy;</title>
+    <title >Pizza Delight </title>
 </head>
 <body>
     <div class="container">
@@ -93,18 +93,15 @@
             <div class="col-md-4 mx-auto py-2">
               <form id="myForm">
                 <div class="form-group">
-                  <label for="sel1">Pizza type:</label>
-                  <br> <select class="form-control" id="type">
-                    <option>Maranira</option>
-                    <option>Margherita</option>
-                    <option>Pizza Calzone</option>
-                    <option>Vegerina</option>
-                    <option>Grilled-caprese</option>
-                    <option>Fontana</option>
-                    <option>Funghi</option>
-                    <option>Mimosa</option>
+                  <label for="sel1">Select size:</label>
+                  <select class="form-control" id="size">
+                    <option value="1">Large-@-1200</option>
+                    <option value="2">Medium-@-900</option>
+                    <option value="3">Small-@-650</option>
                   </select>
                 </div>
+
+
                 <div class="form-group">
                   <label for="sel1">Select crust:</label>
                   <select class="form-control" id="crust">
@@ -128,15 +125,21 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="sel1">Select size:</label>
-                  <select class="form-control" id="size">
-                    <option value="1">Large-@-1200</option>
-                    <option value="2">Medium-@-900</option>
-                    <option value="3">Small-@-650</option>
+                  <label for="sel1">Pizza type:</label>
+                  <br> <select class="form-control" id="type">
+                    <option>Maranira</option>
+                    <option>Margherita</option>
+                    <option>Pizza Calzone</option>
+                    <option>Vegerina</option>
+                    <option>Grilled-caprese</option>
+                    <option>Fontana</option>
+                    <option>Funghi</option>
+                    <option>Mimosa</option>
                   </select>
                 </div>
+
                 <div class="form-group" required>
-                  <label for="sel1">Quantity:</label>
+                  <label for="sel1">number of pizza:</label>
               
                   <input type="number" id="qty" class="form-control" min="1" required>
                   
