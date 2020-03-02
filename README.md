@@ -9,3 +9,11 @@ This is a web aplication where your customers order different sizes of pizzas wi
 * Navigate to the moringa-Pizza-project folder through cd Desktop
 * Open the folder in your favourite editor,for vscode,is code . and for atom, atom .
 * Open the index.html in your browser
+## Technologies Used
+* HTML
+* CSS
+* Bootsrap
+* Script.js
+* Jquery.js
+* FontAwesome Icons
+* Google Fonts
