@@ -28,5 +28,7 @@ This is a web aplication where your customers order different sizes of pizzas wi
 * pizza toppings.
 * pizza size
 * pizza crust
+* you should submit your order
+* comfirm delivery if want so
 ### license and copyright
 MIT License &copy ali
