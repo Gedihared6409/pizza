@@ -23,5 +23,10 @@ This is a web aplication where your customers order different sizes of pizzas wi
  - Secondly , you you will see our menu and the prices of each pizza bellow it.
  - Lastly you will go to the odrder section where you will fill in the form with the type of pizza you need,the crust ,the topings and the quantity you want and you will receive a drop down of you bill and the kind of pizza you want.and also the type of delivery you want which is either pick up or being delivered to you if you are going to be deliverd a drop down promt will appear for you to choose where you want you pizza to reach you at.
 
+### behavior driven development
+* To make order user should choose:
+* pizza toppings.
+* pizza size
+* pizza crust
 ### license and copyright
 MIT License &copy ali
