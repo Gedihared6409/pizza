@@ -1,37 +1,4 @@
-// $(document).ready(function(){
-//     $("button#place-order").click(function(){
-        
 
-
-
-
-
-
-
-
-
-
-//     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// });
 function Order(type, size, crust, topping) {
     this.type = type;
     this.size = size;
