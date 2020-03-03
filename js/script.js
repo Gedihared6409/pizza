@@ -1,25 +1,13 @@
-
-function Order(type, size, crust, topping) {
-    this.type = type;
-    this.size = size;
-    this.crust = crust;
-    this.topping = topping;
-}
-
-Order.prototype.fullOrder = function () {
-    return this.type + " with the topping of " + this.topping + " and " + this.crust + " as crust.";
+function myFunction(){
+    name = document.getElementById("name").value;
+    email = document.getElementById("email").value;
+    message = document.getElementById("message").value;
+    if (name == "" || email == ""||message == ""){
+        alert("enter your name, email and message");
+    }
+    else
+    alert(name + " thank you for contacting us . we have recieved your message");
 };
-
-function Total(price, quantity, delivery) {
-    this.price = price;
-    this.quantity = quantity;
-    this.delivery = delivery;
-}
-
-Total.prototype.finalTotal = function () {
-    return this.price * this.quantity + this.delivery;
-};
-
 
 var sizePrice = [1200, 900, 650]
 var deliverPrices = [0, 300];
@@ -44,8 +32,7 @@ $(document).ready(function () {
 
         var DeliveryCost = deliverPrices[pizzaPick - 1];
 
-
-
+        
         newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
         newTotal = new Total(price, pizzaQty, DeliveryCost);
         if (pizzaPick===1){
@@ -64,12 +51,29 @@ $(document).ready(function () {
 
 
 
-$('form#contactform').submit(function(event){
-    event.preventDefault();
-    var name = $('#name').val();
-    var pass = $('#email').val();
-    var mess = $('#message').val();
-    alert("Hello " + name + " ,Thank You for Contacting Us.");
+
+
 });
-});
+
+function Order(type, size, crust, topping) {
+    this.type = type;
+    this.size = size;
+    this.crust = crust;
+    this.topping = topping;
+}
+
+Order.prototype.fullOrder = function () {
+    return this.type + " with the topping of " + this.topping + " and " + this.crust + " as crust.";
+};
+
+function Total(price, quantity, delivery) {
+    this.price = price;
+    this.quantity = quantity;
+    this.delivery = delivery;
+}
+
+Total.prototype.finalTotal = function () {
+    return this.price * this.quantity + this.delivery;
+};
+
 
